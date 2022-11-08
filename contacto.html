@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escobar Corredora</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/maqueta/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/maqueta/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+    
+            <main class="contenedor seccion contenido-centrado">
+                
+                
+                  <h2 class="fw-300 centrar-texto">Formulario de Contacto</h2>
+            
+                    <form action="enviar.php" method="post" >
+                        
+                        <div class="user_info">
+                            <legend>Información Personal</legend>
+                            <label for="names">Nombre Completo*</label>
+                            <input type="text" id="names" name="nombre" placeholder = "Ingrese sus nombres y apellidos." required>
+            
+                            <label for="phone">Telefono / Celular</label>
+                            <input type="text" id="phone" name="telefono" placeholder = "Ingrese el número de contacto.">
+            
+                            <label for="email">Correo electronico *</label>
+                            <input type="text" id="email" name="correo" placeholder= "Ingrese su email." required>
+            
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Indique la información que desea obtener." required></textarea>
+            
+                            <input type="submit" value="Enviar Mensaje" id="btnSend" class="boton boton-verde">
+                        </div>
+                    </form>
+                    
+                     <section class="contenedor-seccion">
+                        <section class="fw-300 centrar-texto">
+                        
+                            <h3 class= "fw-300">Contacto a Corredora de Propiedades</h3>
+                            <p>Wilma Escobar</p>
+                            <p>+569 92498371</p>
+                        </section>
+                
+                    </section>
+              
+
+            </main>
+            
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="anuncios.html">Anuncios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados Escobar Corredora &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>
